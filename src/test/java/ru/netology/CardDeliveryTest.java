@@ -20,7 +20,7 @@ public class CardDeliveryTest {
 
     @Test
     void shouldSubmitFormWithValidData() {
-        WebDriverManager.chromedriver().setup();
+        
         open("http://localhost:9999");
 
         String planningDate = generateDate(3);
