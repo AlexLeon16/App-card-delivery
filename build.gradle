@@ -31,15 +31,3 @@ test {
     systemProperty 'chromeoptions.prefs', System.getProperty('chromeoptions.prefs', "profile.password_manager_leak_detection=false")
 }
 
-// Явно указываем, где искать тесты
-sourceSets {
-    test {
-        java {
-            srcDirs = ['src/test/java']
-        }
-        resources {
-            srcDirs = ['src/test/java']
-        }
-    }
-}
-
