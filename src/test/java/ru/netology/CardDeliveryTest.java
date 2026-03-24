@@ -28,8 +28,7 @@ public class CardDeliveryTest {
         $("[data-test-id=city] input").setValue("Казань");
 
 //        задание 2
-//        $("[data-test-id=city] input").setValue("Ка");
-        $$(".menu-item").find(Condition.text("Казань")).click();
+
 
         // дата может быть предзаполнена — чистим через Ctrl+A + Delete
         $("[data-test-id=date] input").sendKeys(Keys.chord(Keys.CONTROL, "a"));
@@ -37,7 +36,7 @@ public class CardDeliveryTest {
         $("[data-test-id=date] input").setValue(planningDate);
 
 //      Задание 2
-//      $("[data-test-id=date] button").click(); // кнопка календаря, если есть
+//      $("[data-test-id=date] button").click(); 
 //        $$(".calendar__day").find(Condition.text("25")).click();
 
         $("[data-test-id=name] input").setValue("Иван Петров");
